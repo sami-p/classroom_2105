@@ -45,4 +45,17 @@ describe Classroom do
       expect(classroom.yell_at_students).to eq ['MIKE', 'MEGAN', 'BOB']
     end
   end
+
+  # Iteration 3
+
+  context 'Capacity' do
+    it '#over_capacity?' do
+      classroom = Classroom.new('History', 4)
+      classroom.add_student('Mike')
+      classroom.add_student('Megan')
+      classroom.add_student('Bob')
+
+      expect(classroom.over_capacity?).to eq(false)
+    end
+  end
 end
