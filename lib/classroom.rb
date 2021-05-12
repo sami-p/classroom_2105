@@ -26,4 +26,8 @@ class Classroom
       false
     end
   end
+
+  def kick_out
+    @students.shift
+  end
 end
