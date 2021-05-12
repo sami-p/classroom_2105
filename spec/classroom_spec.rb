@@ -18,7 +18,7 @@ describe Classroom do
       expect(classroom.capacity).to eq 4
     end
 
-    xit 'has no students by default' do
+    it 'has no students by default' do
       classroom = Classroom.new('History', 4)
       expect(classroom.students).to eq []
     end
