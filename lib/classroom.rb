@@ -16,6 +16,14 @@ class Classroom
   def yell_at_students
     @students.map do |student|
       student.upcase
-    end 
+    end
+  end
+
+  def over_capacity?
+    if @students.count > capacity
+      true
+    elsif @students.count <= capacity
+      false
+    end
   end
 end
