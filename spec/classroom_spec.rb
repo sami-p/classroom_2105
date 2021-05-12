@@ -36,7 +36,7 @@ describe Classroom do
       expect(classroom.students).to eq ['Mike', 'Megan', 'Bob']
     end
 
-    xit 'returns a list of uppercased names' do
+    it 'returns a list of uppercased names' do
       classroom = Classroom.new('History', 4)
       classroom.add_student('Mike')
       classroom.add_student('Megan')
