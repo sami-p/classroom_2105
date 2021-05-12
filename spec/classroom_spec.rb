@@ -3,7 +3,7 @@ require './lib/classroom'
 
 describe Classroom do
   context 'Attributes' do
-    xit 'is a classroom' do
+    it 'is a classroom' do
       classroom = Classroom.new('History', 4)
       expect(classroom).to be_an_instance_of(Classroom)
     end
