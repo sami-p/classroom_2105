@@ -27,7 +27,7 @@ describe Classroom do
   # Iteration 2
 
   context 'Students' do
-    xit 'returns a list of students' do
+    it 'returns a list of students' do
       classroom = Classroom.new('History', 4)
       classroom.add_student('Mike')
       classroom.add_student('Megan')
